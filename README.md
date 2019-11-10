@@ -1,0 +1,2 @@
+# Rman
+manage R installations 
