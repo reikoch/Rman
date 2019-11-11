@@ -1,2 +1,2 @@
-# Rman
+# Rmanager
 manage R installations 
