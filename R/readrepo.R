@@ -10,9 +10,8 @@
 #'
 #' @examples
 getRpkgs <- function(Rlibs=NULL) {
-  Rpkgs <- data.frame(installed.packages(lib.loc = Rlibs,
-                                         fields = c('Package', 'Version', 'Priority')),
-                      stringsAsFactors = FALSE)
+  Rpkgs <- data.frame(installed.packages(lib.loc = Rlibs),
+                      stringsAsFactors = FALSE)[, c('Package', 'Version', 'Priority')]
   Rpkgs
 }
 
