@@ -14,3 +14,6 @@ report_src_contrib <- function(srccontrib='src/contrib') {
                   names=c('Package', 'Version'))
 }
 
+# yy <- merge(xx, baserecpkgs, all=TRUE)
+# yy$Version[is.na(yy$Version)] <- as.character(getRversion())
+
