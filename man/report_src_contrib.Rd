@@ -2,16 +2,20 @@
 % Please edit documentation in R/write_repo.R
 \name{report_src_contrib}
 \alias{report_src_contrib}
-\title{list packages provided in srccontrib directory}
+\title{report packages provided in srccontrib directory plus current base packages}
 \usage{
-report_src_contrib(srccontrib = "src/contrib")
+report_src_contrib(srccontrib = "src/contrib", report = paste0("R-",
+  getRversion(), "_pkgs.tsv"))
 }
 \arguments{
 \item{srccontrib}{directory of source R package bundles}
+
+\item{report}{name of tsv file result is written to, 
+default to file R-x.y.z_pkgs.tsv}
 }
 \value{
 dataframe sorted by package name
 }
 \description{
-list packages provided in srccontrib directory
+report packages provided in srccontrib directory plus current base packages
 }
